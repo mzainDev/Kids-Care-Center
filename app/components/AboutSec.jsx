@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 const AboutSec = () => {
     return (
@@ -15,7 +15,7 @@ const AboutSec = () => {
                                     className="about-one__image__one kidearn-tilt mx-auto"
                                     data-tilt-options='{"glare":false,"maxglare":0,"maxtilt":5,"speed":700}'
                                 >
-                                    <Image
+                                    <ExportedImage
                                         src="/images/about-1-1.jpg"
                                         alt="kidearn"
                                         width={500} // Increased width
@@ -27,7 +27,7 @@ const AboutSec = () => {
                                     className="about-one__image__border wow fadeInUp mx-auto"
                                     data-wow-delay="200ms"
                                 >
-                                    <Image
+                                    <ExportedImage
                                         src="/images/about-1-border.jpg"
                                         alt="kidearn"
                                         width={500} // Increased width
@@ -39,7 +39,7 @@ const AboutSec = () => {
                                     className="about-one__image__leaf kidearn-splax mx-auto"
                                     data-para-options='{"orientation":"left","scale":1.5,"overflow":true}'
                                 >
-                                    <Image
+                                    <ExportedImage
                                         src="/images/about-1-leaf-rtl.png"
                                         alt="kidearn"
                                         width={300} // Slightly increased width

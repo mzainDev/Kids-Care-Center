@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Slider from 'react-slick'
-import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaAngleLeft, FaAngleRight } from 'react-icons/fa'
@@ -107,7 +107,7 @@ const OurTeacher = () => {
               >
                 {/* Teacher Image */}
                 <div className="relative overflow-hidden rounded-t-2xl">
-                  <Image
+                  <ExportedImage
                     src={teacher.image}
                     alt={teacher.name}
                     width={400}

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 
 const Services = () => {
@@ -68,7 +68,7 @@ const Services = () => {
                         className="service-one__item__image kidearn-tilt mx-auto" // Added mx-auto to center the image
                         data-tilt-options='{"glare":false,"maxglare":0,"maxtilt":7,"speed":700}'
                       >
-                        <Image
+                        <ExportedImage
                           src={item.img}
                           alt={item.title}
                           width={300}

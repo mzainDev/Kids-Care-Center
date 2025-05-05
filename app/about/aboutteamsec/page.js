@@ -1,6 +1,6 @@
 "use client"
 import Head from 'next/head';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 
 export default function AboutTeamSection() {
@@ -18,21 +18,21 @@ export default function AboutTeamSection() {
                         <div className="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
                             <div className="about-four__image">
                                 <div className="about-four__image__shape1">
-                                    <Image src="/images/about-4-shape-1.png" alt="kidearn shape 1" width={500} height={500} />
+                                    <ExportedImage src="/images/about-4-shape-1.png" alt="kidearn shape 1" width={500} height={500} />
                                 </div>
 
                                 <div className="about-four__image__one kidearn-tilt">
                                     {/* TODO: Implement tilt effect later */}
-                                    <Image src="/images/about-4-1.jpg" alt="kidearn main image" width={500} height={500} />
+                                    <ExportedImage src="/images/about-4-1.jpg" alt="kidearn main image" width={500} height={500} />
                                     <div className="about-four__image__one-bottom"></div>
                                 </div>
 
                                 <div className="about-four__image__two wow fadeInUp" data-wow-delay="500ms">
-                                    <Image src="/images/about-4-2.jpg" alt="kidearn secondary image" width={500} height={500} />
+                                    <ExportedImage src="/images/about-4-2.jpg" alt="kidearn secondary image" width={500} height={500} />
                                 </div>
 
                                 <div className="about-four__image__bg-shape">
-                                    <Image src="/images/about-4-shape-2.png" alt="kidearn background shape" width={500} height={500} />
+                                    <ExportedImage src="/images/about-4-shape-2.png" alt="kidearn background shape" width={500} height={500} />
                                 </div>
                             </div>
                         </div>

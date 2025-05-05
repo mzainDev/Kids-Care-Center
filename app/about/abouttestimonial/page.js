@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 export default function TestimonialSection() {
     return (
@@ -8,11 +8,11 @@ export default function TestimonialSection() {
             {/* Decorative Shapes */}
             <div className="testimonial-one__left-shape kidearn-splax">
                 {/* TODO: Add parallax effect later */}
-                <Image src="/images/testimonial-shape-2.png" alt="kidearn shape left" width={200} height={200} />
+                <ExportedImage src="/images/testimonial-shape-2.png" alt="kidearn shape left" width={200} height={200} />
             </div>
 
             <div className="testimonial-one__right-shape kidearn-splax">
-                <Image src="/images/testimonial-shape-3.png" alt="kidearn shape right" width={200} height={200} />
+                <ExportedImage src="/images/testimonial-shape-3.png" alt="kidearn shape right" width={200} height={200} />
             </div>
 
             <div className="container">
@@ -32,7 +32,6 @@ export default function TestimonialSection() {
                         </h3>
                     </div>
 
-                    {/* Removed Testimonial Carousel and Testimonial Item 2 as requested */}
 
                 </div>
             </div>

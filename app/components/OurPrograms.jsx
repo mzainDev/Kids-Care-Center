@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer';
 
 const OurPrograms = () => {
     return (
         <>
             <section className="program-one">
                 <div className="program-one__bg kidearn-splax" data-para-options='{"orientation":"up","scale":2.5,"overflow":true}'>
-                    <Image src="/images/program-bg-shape.png" alt="kidearn" layout="fill" objectFit="cover" />
+                    <ExportedImage src="/images/program-bg-shape.png" alt="kidearn" layout="fill" objectFit="cover" />
                 </div>
                 <div className="container">
                     <div className="sec-title text-center">
@@ -26,7 +26,7 @@ const OurPrograms = () => {
                                 </div>
                                 <div className="program-one__item__bg"></div>
                                 <div className="program-one__item__image">
-                                    <Image src="/images/program-1-1.jpg" alt="Toddler" width={500} height={400} />
+                                    <ExportedImage src="/images/program-1-1.jpg" alt="Toddler" width={500} height={400} />
                                 </div>
                                 <div className="program-one__item__content">
                                     <h3 className="program-one__item__title">
@@ -54,7 +54,7 @@ const OurPrograms = () => {
                                 </div>
                                 <div className="program-one__item__bg"></div>
                                 <div className="program-one__item__image">
-                                    <Image src="/images/program-1-2.jpg" alt="Preschool" width={500} height={400} />
+                                    <ExportedImage src="/images/program-1-2.jpg" alt="Preschool" width={500} height={400} />
                                 </div>
                                 <div className="program-one__item__content">
                                     <h3 className="program-one__item__title">
@@ -82,7 +82,7 @@ const OurPrograms = () => {
                                 </div>
                                 <div className="program-one__item__bg"></div>
                                 <div className="program-one__item__image">
-                                    <Image src="/images/program-1-3.jpg" alt="Kindergarten" width={500} height={400} />
+                                    <ExportedImage src="/images/program-1-3.jpg" alt="Kindergarten" width={500} height={400} />
                                 </div>
                                 <div className="program-one__item__content">
                                     <h3 className="program-one__item__title">
@@ -110,7 +110,7 @@ const OurPrograms = () => {
                                 </div>
                                 <div className="program-one__item__bg"></div>
                                 <div className="program-one__item__image">
-                                    <Image src="/images/program-1-4.jpg" alt="Flex-care" width={500} height={400} />
+                                    <ExportedImage src="/images/program-1-4.jpg" alt="Flex-care" width={500} height={400} />
                                 </div>
                                 <div className="program-one__item__content">
                                     <h3 className="program-one__item__title">

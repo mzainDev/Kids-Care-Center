@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState } from 'react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import heroBanner from '../../public/images/hero-banner-1.jpg';
 import heroBanner1 from '../../public/images/hero-banner-1-2.jpg';
 import heroBanner2 from '../../public/images/hero-banner-1-3.jpg';
@@ -48,7 +48,6 @@ const BannerCarousel = () => {
     arrows: false,
   });
 
-
   return (
     <section className="banner-one">
       <Slider
@@ -75,7 +74,7 @@ const BannerCarousel = () => {
                           <div className="banner-one__shape2"></div>
                           <div className="banner-one__shape3"></div>
                           <div className="banner-one__shape4">
-                            <Image
+                            <ExportedImage
                               src={bannerShape2}
                               alt="kidearn"
                               width={100}
