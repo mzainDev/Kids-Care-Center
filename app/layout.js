@@ -1,5 +1,24 @@
+import Script from 'next/script';
+import '../public/css/all.min.css';
+import '../public/css/animate.min.css';
+import '../public/css/bootstrap.min.css';
+import '../public/css/bootstrap-select.min.css';
+import '../public/css/jarallax.css';
+import '../public/css/jquery.magnific-popup.css';
+import '../public/css/jquery-ui.css';
+import '../public/css/kidearn-custom-rtl.css';
+import '../public/css/kidearn-rtl.css';
+import '../public/css/kidearn-toolbar.css';
+import '../public/css/nouislider.min.css';
+import '../public/css/nouislider.pips.css';
+import '../public/css/owl.carousel.min.css';
+import '../public/css/owl.theme.default.min.css';
+import '../public/css/style.css';
+import '../public/css/tiny-slider.css';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from './components/Footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +41,40 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
+
+        <Script src="/js/jquery-3.7.0.min.js" strategy="beforeInteractive" />
+        <Script src="/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+        <Script src="/js/bootstrap-select.min.js" strategy="lazyOnload" />
+        <Script src="/js/jarallax.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery-ui.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.ajaxchimp.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.appear.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.circle-progress.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.magnific-popup.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.validate.min.js" strategy="lazyOnload" />
+        <Script src="/js/nouislider.min.js" strategy="lazyOnload" />
+        <Script src="/js/tiny-slider.js" strategy="lazyOnload" />
+        <Script src="/js/wNumb.min.js" strategy="lazyOnload" />
+        <Script src="/js/owl.carousel.min.js" strategy="lazyOnload" />
+        <Script src="/js/wow.js" strategy="lazyOnload" />
+        <Script src="/js/tilt.jquery.js" strategy="lazyOnload" />
+        <Script src="/js/simpleParallax.min.js" strategy="lazyOnload" />
+        <Script src="/js/imagesloaded.min.js" strategy="lazyOnload" />
+        <Script src="/js/isotope.js" strategy="lazyOnload" />
+        <Script src="/js/countdown.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.circleType.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.lettering.min.js" strategy="lazyOnload" />
+        <Script src="/js/kidearn.js" strategy="lazyOnload" />
+
+        {/* Toolbar JS */}
+        <Script src="/js/js.cookie.min.js" strategy="lazyOnload" />
+        <Script src="/js/jQuery.style.switcher.min.js" strategy="lazyOnload" />
+        <Script src="/js/lang.js" strategy="lazyOnload" />
+        <Script src="/js/element.js" strategy="lazyOnload" />
+        <Script src="/js/kidearn-toolbar.js" strategy="lazyOnload" />
       </body>
     </html>
   );
