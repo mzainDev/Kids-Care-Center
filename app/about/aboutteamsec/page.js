@@ -46,7 +46,7 @@ export default function AboutTeamSection() {
                                 </div>
 
                                 <p className="about-four__content__text">
-                                    Lorem Ipsum is simply dummy text of the printing and<br /> typesetting industry. Lorem Ipsum has been the industry's
+                                    Lorem Ipsum is simply dummy text of the printing and<br /> typesetting industry. Lorem Ipsum has been the industry&apos;s
                                 </p>
 
                                 <div className="about-four__info" style={{ '--accent-color': '#F25334' }}>
