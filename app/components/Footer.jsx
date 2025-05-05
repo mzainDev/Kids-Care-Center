@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 
 const Footer = () => {
   return (
@@ -8,10 +8,10 @@ const Footer = () => {
           <footer className="main-footer">
               <div className="main-footer__bg"></div>
 
-              <Image src="/images/footer-s-1-1-rtl.png" className="main-footer__shape-1" alt="kidearn shape 1" width={200} height={200} />
-              <Image src="/images/footer-s-1-2-rtl.png" className="main-footer__shape-2" alt="kidearn shape 2" width={200} height={200} />
-              <Image src="/images/footer-s-1-3.png" className="main-footer__shape-3" alt="kidearn shape 3" width={200} height={200} />
-              <Image src="/images/footer-s-1-4.png" className="main-footer__shape-4" alt="kidearn shape 4" width={200} height={200} />
+              <ExportedImage src="/images/footer-s-1-1-rtl.png" className="main-footer__shape-1" alt="kidearn shape 1" width={200} height={200} />
+              <ExportedImage src="/images/footer-s-1-2-rtl.png" className="main-footer__shape-2" alt="kidearn shape 2" width={200} height={200} />
+              <ExportedImage src="/images/footer-s-1-3.png" className="main-footer__shape-3" alt="kidearn shape 3" width={200} height={200} />
+              <ExportedImage src="/images/footer-s-1-4.png" className="main-footer__shape-4" alt="kidearn shape 4" width={200} height={200} />
 
               <div className="main-footer__top">
                   <div className="container">
@@ -20,7 +20,7 @@ const Footer = () => {
                           <div className="col-md-6 col-xl-4">
                               <div className="footer-widget footer-widget--about">
                                   <Link href="/" className="footer-widget__logo">
-                                      <Image src="/images/logo-light.png" width={160} height={60} alt="Kidearn Logo" />
+                                      <ExportedImage src="/images/logo-light.png" width={160} height={60} alt="Kidearn Logo" />
                                   </Link>
                                   <ul className="list-unstyled footer-widget__info">
                                       <li>
@@ -81,7 +81,7 @@ const Footer = () => {
                                       {[1, 2, 3, 4, 5, 6].map((num) => (
                                           <li key={num}>
                                               <a className="img-popup" href={`/assets/images/resources/footer-gallery-${num}.png`}>
-                                                  <Image src={`/images/footer-gallery-${num}.png`} alt={`footer gallery ${num}`} width={80} height={80} />
+                                                  <ExportedImage src={`/images/footer-gallery-${num}.png`} alt={`footer gallery ${num}`} width={80} height={80} />
                                               </a>
                                           </li>
                                       ))}
